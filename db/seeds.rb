@@ -39,3 +39,16 @@ Product.create([
     stock: 10
   }
 ])
+
+Order.create([
+  {
+    customer_name: 'Ana',
+    status: 'Processing',
+    product: Product.first
+  },
+  {
+    customer_name: 'Lau',
+    status: 'Shipped',
+    product: Product.first
+  }
+])

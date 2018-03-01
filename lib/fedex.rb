@@ -57,9 +57,10 @@ module Fedex
     # @raise [ShipmentNotFound] if the shipment can't be found
     #
     def self.find(fedex_id)
-      shipment = @shipments[id]
+      puts @shipments.inspect
+      shipment = @shipments[fedex_id]
 
-      raise ShipmentNotFound, "Shipment not found: #{id}" if shipment.blank?
+      raise ShipmentNotFound, "Shipment not found: #{fedex_id}" if shipment.blank?
 
       shipment.status = STATUS.shuffle.first
 

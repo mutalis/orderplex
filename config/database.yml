@@ -11,11 +11,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: orderplex_development
+  database: orderplex
   pool: 5
-  username: <%= ENV['USER'] %> #(or your username if PostgreSQL installed by Homebrew)
-  password:
-
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
@@ -39,13 +39,13 @@ test:
   encoding: unicode
   database: orderplex_test
   pool: 5
-  username: <%= ENV['USER'] %> #(or your username if PostgreSQL installed by Homebrew)
-  password:
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
 
 production:
   adapter: postgresql
   encoding: unicode
   database: orderplex_production
   pool: 5
-  username: <%= ENV['USER'] %>
-  password:
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>

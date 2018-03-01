@@ -35,7 +35,13 @@ group :development do
 end
 
 group :test do
-  gem 'factory_girl_rails', '~> 4.0'
-  gem 'database_cleaner'
-  gem 'rr', require: false
+  # gem 'factory_girl_rails', '~> 4.0'
+  # gem 'database_cleaner'
+  # gem 'rr', require: false
 end
+
+gem 'dotenv-rails', '2.2.1'
+
+gem 'ransack', '1.8.7'
+
+gem 'bootstrap-sass', '3.3.3'

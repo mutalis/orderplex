@@ -1,0 +1,13 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+
+//Import Bootstrap components explicitly in order to remove unused components.
+@import "bootstrap";
+
+// Style fix to make a space between the top menu and the main content.
+@import "stylefix-navbar-fixed-top";
+
+// Note that we do NOT have the default "require_tree ." because we want to 
+// control the sequence of loads, especially getting Bootstrap loaded first.
+
+//The same for "require_self" in order to avoid loading any CSS and SCSS in this file.
