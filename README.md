@@ -1,6 +1,8 @@
 Orderplex
 =========
 
+It's an Admin App that allows create and search orders. It automatically updates the order shipping status through a background job.
+
 Before Starting
 ---------------
 
