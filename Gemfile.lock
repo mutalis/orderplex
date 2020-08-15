@@ -54,7 +54,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.7)
     crass (1.0.3)
     debug_inspector (0.0.3)
     domain_name (0.5.20170404)
@@ -103,7 +103,7 @@ GEM
     polyamorous (1.3.3)
       activerecord (>= 3.0)
     public_suffix (3.0.2)
-    rack (1.6.9)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.10)
@@ -157,7 +157,7 @@ GEM
       rdoc (~> 4.0)
     spring (2.0.2)
       activesupport (>= 4.2)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
